@@ -122,7 +122,6 @@ namespace CodeofAdvent
                 currentPosition++;
             } while (dtCo2.Rows.Count > 1);
 
-
             //convert O2 binary to dec and Co2 binary to dec and multiply them
             int result = Convert.ToInt32(dtO2.Rows[0][0].ToString(), 2) * Convert.ToInt32(dtCo2.Rows[0][0].ToString(), 2);
             Console.WriteLine("The result of puzzle tow: " + result);
@@ -140,9 +139,6 @@ namespace CodeofAdvent
                     count++;
                 }
             }
-
-
-
             return count;
         }
 
